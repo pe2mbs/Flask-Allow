@@ -17,12 +17,12 @@ setup(
     url             = 'https://github.com/pe2mbs/flask-allow',
     license         = 'GPL 2.0-only',
     packages        = find_packages( include=[ 'flask_allow', 'flask_allow.*' ] ),
-    keywords        = "flask,white,black,list,access",
+    keywords        = "flask,white,black,list,access,allow,deny",
     install_requires= [
         'flask==2.3.3',
         'mako==1.3.0',
     ],
-    setup_requires  = [ 'pytest-runner', 'flake8', 'requests' ],
+    setup_requires  = [ 'pytest-runner', 'flake8' ],
     tests_require   = [ 'pytest', 'requests' ],
     classifiers     = [
         "Development Status :: 5 - Production/Stable",
