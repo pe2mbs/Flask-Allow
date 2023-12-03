@@ -25,4 +25,3 @@ class InvalidAccessLog( Exception ):
         super().__init__( message )
         self.data = data
         return
-

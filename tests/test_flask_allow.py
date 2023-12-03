@@ -61,6 +61,3 @@ def test_access_publichost( startFlask ):
     r = requests.get( f'http://{host}:5000' )
     assert( r.status_code == 403 )
     return
-
-
-
