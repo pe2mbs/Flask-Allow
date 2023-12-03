@@ -23,7 +23,7 @@ Why should you use a reverse proxy, read all about it in the
 
 # Version
 Currently this supports and is tested with Flask 2.x.x. therefore the version of this package
-is version 2.0.0.
+is version 2.0.x. Tested with Python version 3.8, 3.9, 3.10 and 3.11. 
 
 
 # Licence

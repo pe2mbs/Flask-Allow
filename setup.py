@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name            = 'Flask-Allow',
-    version         = '2.0.0',
+    version         = '2.0.1',
     description     = 'Flask-Allow allows white/black listing of ip addresses/networks and providing access log.',
     long_description= readme(),
     long_description_content_type="text/markdown",
@@ -17,6 +17,7 @@ setup(
     url             = 'https://github.com/pe2mbs/flask-allow',
     license         = 'GPL 2.0-only',
     packages        = find_packages( include=[ 'flask_allow', 'flask_allow.*' ] ),
+    keywords        = "flask,white,black,list,access",
     install_requires= [
         'flask==2.3.3',
         'mako==1.3.0',
@@ -28,7 +29,10 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Natural Language :: English",
         "Operating System :: OS Independent",
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         "Programming Language :: Python :: Implementation :: CPython",
         "Environment :: Web Environment",
         "Framework :: Flask",
