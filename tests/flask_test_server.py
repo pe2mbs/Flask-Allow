@@ -33,6 +33,7 @@ def flask_test_server( verbose = False ):
                 "DENY":     "0.0.0.0/0"              # Deny the rest
             }
         ]
+
         # Force logging click off
         def secho(text, file=None, nl=None, err=None, color=None, **styles):
             pass
