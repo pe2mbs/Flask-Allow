@@ -1,4 +1,4 @@
-#   flask_allow allows white/black listing of ip addresses/networks.
+#   Flask-Allow allows white/black listing of ip addresses/networks.
 #   Copyright (C) 2023 Marc Bertens-Nguyen
 #
 #   This program is free software; you can redistribute it and/or
@@ -23,13 +23,12 @@ import logging
 import logging.handlers
 from mako.template import Template
 from flask import Flask, request, abort
+from flask_allow.exceptions import InvalidAccessLog
 
 
-class InvalidAccessLog( Exception ):
-    def __init__( self, message, data ):
-        super().__init__( message )
-        self.data = data
-        return
+__version__ = '2.0.0'
+__author__  = 'Marc Bertens-Nguyen'
+__licence__ = 'GPL-2.0-only'
 
 
 class FlaskAllow( object ):
@@ -96,9 +95,9 @@ class FlaskAllow( object ):
 
         :returns:       None
         """
-        self.__allowdeny = tuple()
-        self.__app = app
-        self.__access = logging.getLogger( "myaccess" )
+        self.__allowdeny    = tuple()
+        self.__app          = app
+        self.__access       = logging.getLogger( "flask.allow" )
         self.__access.setLevel( logging.NOTSET )
         if app is not None:
             self.init_app( app )
@@ -121,9 +120,9 @@ class FlaskAllow( object ):
                 if not os.path.isfile( filename ):
                     raise Exception( f"{filename} is not a valid filename" )
 
-            self.ACCESS_LOG_HANDLER[ 'filename' ] = filename
-            self.ACCESS_LOG_HANDLER[ 'maxBytes' ] = maxBytes
-            self.ACCESS_LOG_HANDLER[ 'backupCount' ] = backupCount
+            self.ACCESS_LOG_HANDLER[ 'filename' ]       = filename
+            self.ACCESS_LOG_HANDLER[ 'maxBytes' ]       = maxBytes
+            self.ACCESS_LOG_HANDLER[ 'backupCount' ]    = backupCount
             return
 
         if accessLog is None:
