@@ -110,14 +110,14 @@ flask-access, see the contributing guidelines.
 
 
 # Donate
-The Pallets organization develops and supports Flask-SQLAlchemy and other popular packages. 
+The Pallets organization develops and supports Flask and other popular packages. 
 In order to grow the community of contributors and users, and allow the maintainers to devote 
 more time to the projects, [please donate today](https://palletsprojects.com/donate)
 
 
 # Links
-[Changes](https://github.com/pe2mbs/flask-allow/CHANGED.md)
-[PyPI Releases](https://pypi.org/project/flask_allow/)
-[Source Code](https://github.com/pe2mbs/Flask-Allow)
-[Issue Tracker](https://github.com/pe2mbs/Flask-Allow/issues)
-[Website](https://github.com/pe2mbs/Flask-Allow)
+* [Changes](https://github.com/pe2mbs/flask-allow/CHANGED.md)
+* [PyPI Releases](https://pypi.org/project/flask_allow/)
+* [Source Code](https://github.com/pe2mbs/Flask-Allow)
+* [Issue Tracker](https://github.com/pe2mbs/Flask-Allow/issues)
+* [Website](https://github.com/pe2mbs/Flask-Allow)
