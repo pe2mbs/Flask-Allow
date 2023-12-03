@@ -22,7 +22,7 @@ setup(
     ],
     setup_requires  = [ 'pytest-runner',
                        'flake8' ],
-    tests_require   = [ 'pytest' ],
+    tests_require   = [ 'pytest', 'requests' ],
     classifiers     = [
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
