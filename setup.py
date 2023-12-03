@@ -20,8 +20,7 @@ setup(
         'flask==2.3.3',
         'mako==1.3.0',
     ],
-    setup_requires  = [ 'pytest-runner',
-                       'flake8' ],
+    setup_requires  = [ 'pytest-runner', 'flake8', 'requests' ],
     tests_require   = [ 'pytest', 'requests' ],
     classifiers     = [
         "Development Status :: 5 - Production/Stable",
