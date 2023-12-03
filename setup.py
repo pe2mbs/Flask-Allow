@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name            = 'Flask-Allow',
-    version         = '1.9.3',
+    version         = '2.0.0',
     description     = 'Flask-Allow allows white/black listing of ip addresses/networks and providing access log.',
     long_description= readme(),
     long_description_content_type="text/markdown",
